@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AQURUINV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="https://aqru.io/app/themes/mbp-core/dist/images/logo.svg?id=3d7ee8407c53215d7dae" width="200px" height="50px" alt="">
+        </div>
+        <div class="headlist">
+            <ul>
+                <li><a href=""><button>LOGIN <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMZJREFUSEvtlE0KwjAQhb/eQXDvpndQ0OuI24I3EfeCBxHEMwh6AGnBK2gHKkTEzA8WN802yXx5b96koOdV9FyfAaA6HLFoDeyAm1od3D1YARvgAswtEK+CMXBqFUyAKzAFmpwSL0BqpZBzp+QrJAJ4QQ5ACWQhUYBARsBRg+QAD0tKkjOiZAbc03u/Bkiy3vrxV4tyDpn8lwIRBRJTU4IiANcMRADLdtC2XfYXQK0lLWJRBewt/1BEgfbgj/2IAhdkAKh2PQESzCgZeI9igwAAAABJRU5ErkJggg=="/></button></a></li>
+                <li><a href=""><button>SIGNUP<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMZJREFUSEvtlE0KwjAQhb/eQXDvpndQ0OuI24I3EfeCBxHEMwh6AGnBK2gHKkTEzA8WN802yXx5b96koOdV9FyfAaA6HLFoDeyAm1od3D1YARvgAswtEK+CMXBqFUyAKzAFmpwSL0BqpZBzp+QrJAJ4QQ5ACWQhUYBARsBRg+QAD0tKkjOiZAbc03u/Bkiy3vrxV4tyDpn8lwIRBRJTU4IiANcMRADLdtC2XfYXQK0lLWJRBewt/1BEgfbgj/2IAhdkAKh2PQESzCgZeI9igwAAAABJRU5ErkJggg=="/></button></a></li>
+                <li><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZtJREFUSEvd1b1rFVEQBfBfNKAQsYqFoBiFIEIUESstlYAhYJQQIoJFLETsFUXxD9DGQrERCdjYWAiBFDYS0gQFxRSpEhIQBbESwS9I7sA+WNbdzb4Hr8nt9s6dc+6cO3O2R5dXT5fxbT2CPvzcRLbduI9RHMRfPMYd7MX57Hs9cPISbcciJvCphuQNzpTE17Afl/CyFc8TDGAF33AB8yUgJ/C+hvwd3uIFPhQr2Ikf6M0AnuEevuQAL2fJVRwh740k3XRZBbEXtz5VyJ7DayzgOB7VVPAcU/l4XqJdOIxZ9Hc4Hw9ws4pgH1bxPXXBng4JQp4nVQTbsIwDHYJH2hEsVRHE/sWsxVoP3Q5XdOChYkKZVcQc3MXRdtBxHU+bEIxgpk3wGLLBNM1/mhDEmejjKw1J/uF01sb/pVS5aTz4EG6nR5usIQq/uZoaI/q/dJURhOGdxC2cqwH/hZjsV3WV5gnO4mFKOFYwwbL8GMZraWpD+9pVrCCseDwZ1RiGsSPJ9Btf8RnhpHHjj5sBt+Jb74/WtPLG57ou0QbqWz0ZBzSqswAAAABJRU5ErkJggg=="/></a></li>
+                <li><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAblJREFUSEvV1TtoVEEYxfFflKCFBhEhhQTxAakEBUUI0YiFdoKigkUSHynEVsEU6RIiBOxCxEItVXygoIWVIBLBThBMEwgqpAiIYGEQfNwPZuVy2bsvs4hT7e7MnP835zsz26HNo6PN+v5LwD5sw51wZ6VOsAGDOIdd+IquvwWswhGcwTF05vr5AVtaBWzHeQxhcxJdxM/c94c40QxgHU4mC/pzlf7CDJ4mz8OqGFcw1QhgP84m8YDkx/sE3IQHWJObPIQXZYA49nAS3lHlnnzPxK5iEqdxC9GPygirophvRcAeTOBwjXS9Tv5H9WMYr1LAO+ys/J6P6VzmY2/JzY7YjeJ6mp/GxZK1NzFSDbA6820g+R2x606LnuFCtulTiuJdHK/xxMTaG9UA+T3h6UFEKh6lifXZJXqMaGCtERftbT1AUSCa9hK764gvpwb/aBawF2/qiMf0K0S0/4xG36JI1vO06zM2lsCu4XIrgFO4h0jaARxFJGltARTr7rcCiGRcQh+WkkBk/Qm25gTj80IrgBD7iC+FiuNJvp1iGzHuKVrXaA/q9Tf+C+azV2C2XYDSAlbqBP8O8BtHxEAZRG4wGQAAAABJRU5ErkJggg=="/></a></li>
+                <li><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASxJREFUSEvl1TsvBFEYh/HfCp2Igso3oNXoKFQKIa6hk/AtJD6GS4m4h0InLo1G7xPoRKUl7Elem81erZndxlQzOe88z5z/Oe+cgjZfhTbzdVxwh/GMs7rHxA+jcgZfGeFV3EaC66ie+oO0xK0nOMBqgA+x3KKkqWAX6wHdw1regnfsowsr6M1b8IrngA5jsLgzHuJ5CP3YxgdGMFfxAU0jOsZSvHSERUo9M4MnvJRBN4vjW2XPTQUnAU3vJNlCxFVvG3fjDX0hySTowRVGQ5waK12PGMtDkLr0NkA72Ij7S0znIUhrcBGgWlGmoaYRncb0U3GCzCPl/IlZnIfgLMbK6/6JoFGjDURzpShq1f0qohb/DFXldRc5jwPnBpM/yo4fmVmjqZ9V7uQAfgNR+VIZag7oTQAAAABJRU5ErkJggg=="/></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="head2">
+        <ul>
+            <li><a href="">Invest</a></li>
+            <li><a href="">Earn</a></li>
+            <li><a href="">Exchange</a></li>
+            <li><a href="">News & Insights</a></li>
+            <li><a href="">Service</a></li>
+            <li> <a href="">Help % Support</a></li>
+            <li><a href="">Investors</a></li>
+        </ul>
+        
+
+    </div>
+    <hr class="headhr">
+    <section>
+        <div class="sec1">
+            <div class="sec1write">
+                <h1>The best of crypto exchanging & investing, all in one place
+                </h1>
+                <h2>Supercharge your crypto portfolio. AQRU brings together unique investment opportunities from across the world of crypto.</h2>
+                <p>Access cryptocurrency investment pools and products from the cryptoverse, all in one place. Invest, earn yield, and exchange crypto with ease and confidence. Crypto investing crafted and curated by us, for you – accessible, secure and transparent.</p>
+                <h3>AQRU accounts are now available with a minimum balance of USD250k.</h3>
+                <div class="sec1items">
+                    
+                    <ul>
+                        <li><a href=""><button>Join Now</button></a></li>
+                        <li><a href="" ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEu11T9IVlEYx/GPYOZgiEgULoJbk4TW0BgpiYto1K616CKItuYagpNOTQ4NVpCzOvknQidxVCERdHBwc3DQe+AOL2/39Z4jvgfOcs65z/d5znN+v9ugzqOhzvHdFdCEGYzg+W1J3gXQjE30YA/d9w2Yw1Qe9D1+3DfgCB0YxfeyHpZd0TP0oQVLOMEn/MZAttaFA2zgXxGsFqAN37I7Hq746DqDbeEUb/GoKuAXzFZDigAPsI3esvIL9l9gt3K9CDCWZ58a/wOWYyoI1/AqMfovvIvtwTnaEwETWIwFXKExEfAZX2MBZ3iSCAhiC6L7bxQ1eTWzgjeJgPCE+7EW0+TpWuWWQC8zIX6sVndRBU8zGzhG0EPq2MHLMh2E/QWMp0bHUGbfKzGA4D376EyA/CnSz21mF2QfTOxhBOQit5bDmCZXnnmN+Wy24ifWEZr5GIP5/IvJ3FWjnmlEwvFHyv4H8ZFqnKw74AYuPjMZIA0yawAAAABJRU5ErkJggg=="/></a></li>
+                        <li><a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZxJREFUSEvF1b9LVmEYxvGPk4OICDn6lxRGQ1kQToF7SzgJQT8Wt35AoRGaLlEh/gkOEgVFVlNLWEMtOaQQNAWGQea54T5xsPfHed838VkeeA7n+p7rvq/7OX0OefUdsr4jAYxiA2u4is1eXDZyMI/HeIYB3MHtArbTDagR4A8eYQ6vMIwtXMcK4nnt1QwQAkt4UIHE2Ttcyr0WpBWgCnmBY6kYDsLJtQK23Y7SDhDvLxbiC3hZOBqpCP5MSPSs6aoDKJ3cx3rFyTecx028ziD8OkiqC4j3oh+lk12cxWzu8fwTLibsL6cTQFmuKElENvaJA18c/TmOt+V5p4AoSwj0p8hgA8AJvOkGEOLjOR/fiyG8i6cYSrH3mKqKx3ldBxHHEI+an07B5UL8XkY2zp80GsI6gJjiM/nF5yol+Z0pijur65h+xclMT6SmXKu4jM+9DFqIj2UZyrR8wDSetxNu1+S4ok/lTXoB0eAZPMReXfFmTf6Yw3MDk5maW/jRiXArB/EPiGsh4ncFX7oRbgXoRe+fd4/kn/xfHewDgVZfGc+kAjUAAAAASUVORK5CYII="/></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="sec1img">
+                <img src="https://aqru.io/app/uploads/2023/02/aqru-screenshot2-2023.png" height="500px" alt="">
+
+            </div>
+            
+
+        </div>
+        <div class="sec2">
+          <div class="sec2write">
+            <h1>The AQRU Exchange.</h1>
+            <ul>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAe1JREFUSEu11T2oT3Ecx/HXLYUiwy155koZhIxCLLc8LGJgIYPCIlEmj9mUQUoYL6UMopRSBpTJYJLnh8JgMFgkj+er39Hp55z/Ofd/u7/t/Pp+P+/v0+97BozzGRhnfW2AidiK9ViOBfiNt3iM27iO702B9gJswPkk2ivRl9iLu3VGTYATRaTHR1G+XziMM7lPHeAkjo1CvGp6AGerFzlgE271KR5ukckaPCw1qoApeIEZYwCE6zMsLRtfBexLTe2q/wlXcLDGYTNuxn0VEKWJEnU5H7AWr4qML2BP5nSpvKsCwmlWB/WwW4V3RQaL8KCmrPFGVuQZfMWkDHC6eFS7itJNT/cfsRpvkvh9zKwJ6jMGc8CXYo6nVozPYT+GUpTxgkM8Io+7EJ/TkHFoTcsBT7G44vA+1fl1Eox1EHcLca+HeEg8wZIccBXbs4hCMOY6dk+c2EVR86bIS/fL2JkDdhTRjdSkHJCVmNBRPCS24VoOmFxkEGWaVwOJpgZgbocpe15s2GX4lgPiexh3Oog0mcSqWJcy/WtTt+yO4FSfkJi6mL5/p2ldHy3gsVXbfkil0E8cyjdpUwalU6yNi5jdkk38cHan0f3PtC3CeNlbsDE1bn76ZcbbeJT6dQM/moJoA/TZivYejFm4FPgDhI9UGTqfGmgAAAAASUVORK5CYII="/> Institutional exchange rates.</li>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAe1JREFUSEu11T2oT3Ecx/HXLYUiwy155koZhIxCLLc8LGJgIYPCIlEmj9mUQUoYL6UMopRSBpTJYJLnh8JgMFgkj+er39Hp55z/Ofd/u7/t/Pp+P+/v0+97BozzGRhnfW2AidiK9ViOBfiNt3iM27iO702B9gJswPkk2ivRl9iLu3VGTYATRaTHR1G+XziMM7lPHeAkjo1CvGp6AGerFzlgE271KR5ukckaPCw1qoApeIEZYwCE6zMsLRtfBexLTe2q/wlXcLDGYTNuxn0VEKWJEnU5H7AWr4qML2BP5nSpvKsCwmlWB/WwW4V3RQaL8KCmrPFGVuQZfMWkDHC6eFS7itJNT/cfsRpvkvh9zKwJ6jMGc8CXYo6nVozPYT+GUpTxgkM8Io+7EJ/TkHFoTcsBT7G44vA+1fl1Eox1EHcLca+HeEg8wZIccBXbs4hCMOY6dk+c2EVR86bIS/fL2JkDdhTRjdSkHJCVmNBRPCS24VoOmFxkEGWaVwOJpgZgbocpe15s2GX4lgPiexh3Oog0mcSqWJcy/WtTt+yO4FSfkJi6mL5/p2ldHy3gsVXbfkil0E8cyjdpUwalU6yNi5jdkk38cHan0f3PtC3CeNlbsDE1bn76ZcbbeJT6dQM/moJoA/TZivYejFm4FPgDhI9UGTqfGmgAAAAASUVORK5CYII="/> 0.35% commission and no other charges.</li>
+            </ul>
+            <button>Find out more</button>
+          </div>
+
+        </div>
+        <div class="sec3">
+            <h1>INVEST</h1>
+            <h2>Invest</h2>
+            <h3>Diversify. Balance your portfolio. Beat the market at its own game.</h3>
+            <p>Crypto investing has more to offer than picking a coin and hoping for the best. 
+
+                We design our AQRU Invest products with the kind of features that sophisticated investors are used to seeing in traditional finance, but that can be hard to find in the world of crypto.</p>
+
+        </div>
+        <div class="sec3">
+            <h1>EARN</h1>
+            <h2>Earn</h2>
+            <h3>Earn market-leading rates of interest on the crypto you buy, hold or transfer.</h3>
+            <p>Invest in crypto and earn up to 10% APY interest. AQRU offers the perfect way to earn interest on your crypto portfolio. Our easy to use platform tracks your interest payments by the hour and pays interest daily, so you can start benefiting from high returns immediately</p>
+
+        </div>
+        <div class="sec4">
+            <div class="sec4ite">
+                <h1>Stable Coins</h1>
+                <img src="./2024-11-18 (1).png" width="450px" height="250px" alt="">
+
+            </div>
+            <div class="sec4ite">
+                <h1>Crypto staples</h1>
+                <img src="./2024-11-18 (3).png" width="450px" height="250px" alt="">
+
+            </div>
+
+        </div>
+        <div class="sec5">
+            <h1>EXCHANGE</h1>
+            <h2 class="hrr">Exchange</h2>
+            <div class="sec4dis">
+                <div class="sec4ite1">
+                    <h2>Institutional exchange rates and one all-in charge of 0.35% commission.</h2>
+                    <p>With totally transparent pricing, AQRU Exchange provides you with the easiest, most cost effective way to exchange between stablecoins, cryptocurrencies, sterling and euro.</p>
+                    <a href=""><button>Find Out More ></button></a> <br>
+                    <img src="https://aqru.io/app/themes/mbp-core/dist/images/coins-banner.png?id=092359b0ae230c885585" width="350px" alt="">
+
+                </div>
+                <div class="sec4ite2">
+                    <img src="https://aqru.io/app/uploads/2022/06/exchange-preview-640x994-1.png" height="500px" alt="">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="preswc6">
+            <h1 >People like you who trust AQRU</h1>
+
+        </div>
+        <div class="sec6">
+            <div class="sec6ite">
+                <img src="./AQR img 3.jpg" width="100px" height="120px" alt="">
+                <h1>Lachezar Alexandrov</h1>
+                <p>Very user-friendly experience with the app. Perfect for beginners as it is super intuitive an easy to use. Customer support were really nice and responded immediately whenever I had any questions.</p>
+
+            </div>
+            <div class="sec6ite">
+                <img src="./AQR img 2.jpg" width="100px" height="120px" alt="">
+                <h1>Justin</h1>
+                <p>Fantastic app! Has helped me get involved in crypto and made a confusing world much more simple.</p>
+
+            </div>
+            <div class="sec6ite">
+                <img src="./AQR img.jpg" width="100px" height="120px" alt="">
+                <h1>Kristin Meshinska</h1>
+                <p>Very friendly customer support and referral program was great! Customer support swiftly helped me solve an issue with minimal fuss involved.</p>
+
+            </div>
+
+        </div>
+        <div class="sec7">
+            <h1>How it works</h1>
+            <p>At AQRU, we make it as simple as possible to deposit, earn and withdraw. If you have any other questions, visit our FAQs or chat to our team.</p>
+                  
+
+        </div>
+        <div class="sec8">
+            <div class="sec8ite">
+            <img src="./aqruinv img 1.1.png" alt="">
+            <img src="./aqruinv img 2.2.png" alt="">
+            <img src="./aqruinv img 3.3.png" alt="">
+            </div>
+            <div class="sec8btn">
+                <a href=""><button>Get Started </button></a>
+                <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEu11T9IVlEYx/GPYOZgiEgULoJbk4TW0BgpiYto1K616CKItuYagpNOTQ4NVpCzOvknQidxVCERdHBwc3DQe+AOL2/39Z4jvgfOcs65z/d5znN+v9ugzqOhzvHdFdCEGYzg+W1J3gXQjE30YA/d9w2Yw1Qe9D1+3DfgCB0YxfeyHpZd0TP0oQVLOMEn/MZAttaFA2zgXxGsFqAN37I7Hq746DqDbeEUb/GoKuAXzFZDigAPsI3esvIL9l9gt3K9CDCWZ58a/wOWYyoI1/AqMfovvIvtwTnaEwETWIwFXKExEfAZX2MBZ3iSCAhiC6L7bxQ1eTWzgjeJgPCE+7EW0+TpWuWWQC8zIX6sVndRBU8zGzhG0EPq2MHLMh2E/QWMp0bHUGbfKzGA4D376EyA/CnSz21mF2QfTOxhBOQit5bDmCZXnnmN+Wy24ifWEZr5GIP5/IvJ3FWjnmlEwvFHyv4H8ZFqnKw74AYuPjMZIA0yawAAAABJRU5ErkJggg=="/></a>
+                <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZxJREFUSEvF1b9LVmEYxvGPk4OICDn6lxRGQ1kQToF7SzgJQT8Wt35AoRGaLlEh/gkOEgVFVlNLWEMtOaQQNAWGQea54T5xsPfHed838VkeeA7n+p7rvq/7OX0OefUdsr4jAYxiA2u4is1eXDZyMI/HeIYB3MHtArbTDagR4A8eYQ6vMIwtXMcK4nnt1QwQAkt4UIHE2Ttcyr0WpBWgCnmBY6kYDsLJtQK23Y7SDhDvLxbiC3hZOBqpCP5MSPSs6aoDKJ3cx3rFyTecx028ziD8OkiqC4j3oh+lk12cxWzu8fwTLibsL6cTQFmuKElENvaJA18c/TmOt+V5p4AoSwj0p8hgA8AJvOkGEOLjOR/fiyG8i6cYSrH3mKqKx3ldBxHHEI+an07B5UL8XkY2zp80GsI6gJjiM/nF5yol+Z0pijur65h+xclMT6SmXKu4jM+9DFqIj2UZyrR8wDSetxNu1+S4ok/lTXoB0eAZPMReXfFmTf6Yw3MDk5maW/jRiXArB/EPiGsh4ncFX7oRbgXoRe+fd4/kn/xfHewDgVZfGc+kAjUAAAAASUVORK5CYII="/></a>
+            </div>
+
+            
+
+
+        </div>
+        <div class="sec9">
+            <img src="./aqruinv img 4.4.png" width="1345px" alt="">
+        </div>
+        <div class="sec10">
+            <div class="sec10write">
+                <h1>Security is #1 at AQRU</h1>
+                <p class="pp2">We take security very seriously to ensure that you have the tools to buy, hold and earn interest on your crypto as safely as possible. The AQRU platform uses encryption in transit, encryption at rest and address whitelisting to ensure that your money is safe whilst you invest and earn.</p>
+                <ul>
+                    <li><h4> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAe1JREFUSEu11T2oT3Ecx/HXLYUiwy155koZhIxCLLc8LGJgIYPCIlEmj9mUQUoYL6UMopRSBpTJYJLnh8JgMFgkj+er39Hp55z/Ofd/u7/t/Pp+P+/v0+97BozzGRhnfW2AidiK9ViOBfiNt3iM27iO702B9gJswPkk2ivRl9iLu3VGTYATRaTHR1G+XziMM7lPHeAkjo1CvGp6AGerFzlgE271KR5ukckaPCw1qoApeIEZYwCE6zMsLRtfBexLTe2q/wlXcLDGYTNuxn0VEKWJEnU5H7AWr4qML2BP5nSpvKsCwmlWB/WwW4V3RQaL8KCmrPFGVuQZfMWkDHC6eFS7itJNT/cfsRpvkvh9zKwJ6jMGc8CXYo6nVozPYT+GUpTxgkM8Io+7EJ/TkHFoTcsBT7G44vA+1fl1Eox1EHcLca+HeEg8wZIccBXbs4hCMOY6dk+c2EVR86bIS/fL2JkDdhTRjdSkHJCVmNBRPCS24VoOmFxkEGWaVwOJpgZgbocpe15s2GX4lgPiexh3Oog0mcSqWJcy/WtTt+yO4FSfkJi6mL5/p2ldHy3gsVXbfkil0E8cyjdpUwalU6yNi5jdkk38cHan0f3PtC3CeNlbsDE1bn76ZcbbeJT6dQM/moJoA/TZivYejFm4FPgDhI9UGTqfGmgAAAAASUVORK5CYII="/> Bank-level security</h4><p>We’ve partnered with leading wallet infrastructure provider Fireblocks. Their battle-tested platform combines the latest breakthroughs in Multi-Sig technology to keep your assets safe.</p></li>
+                    <li><h4> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAe1JREFUSEu11T2oT3Ecx/HXLYUiwy155koZhIxCLLc8LGJgIYPCIlEmj9mUQUoYL6UMopRSBpTJYJLnh8JgMFgkj+er39Hp55z/Ofd/u7/t/Pp+P+/v0+97BozzGRhnfW2AidiK9ViOBfiNt3iM27iO702B9gJswPkk2ivRl9iLu3VGTYATRaTHR1G+XziMM7lPHeAkjo1CvGp6AGerFzlgE271KR5ukckaPCw1qoApeIEZYwCE6zMsLRtfBexLTe2q/wlXcLDGYTNuxn0VEKWJEnU5H7AWr4qML2BP5nSpvKsCwmlWB/WwW4V3RQaL8KCmrPFGVuQZfMWkDHC6eFS7itJNT/cfsRpvkvh9zKwJ6jMGc8CXYo6nVozPYT+GUpTxgkM8Io+7EJ/TkHFoTcsBT7G44vA+1fl1Eox1EHcLca+HeEg8wZIccBXbs4hCMOY6dk+c2EVR86bIS/fL2JkDdhTRjdSkHJCVmNBRPCS24VoOmFxkEGWaVwOJpgZgbocpe15s2GX4lgPiexh3Oog0mcSqWJcy/WtTt+yO4FSfkJi6mL5/p2ldHy3gsVXbfkil0E8cyjdpUwalU6yNi5jdkk38cHan0f3PtC3CeNlbsDE1bn76ZcbbeJT6dQM/moJoA/TZivYejFm4FPgDhI9UGTqfGmgAAAAASUVORK5CYII="/> Multi-layered deposit insurance</h4><p>We use a multi-layered insurance policy to protect the total value of your assets against hacking.</p></li>
+                    <li><h4> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAe1JREFUSEu11T2oT3Ecx/HXLYUiwy155koZhIxCLLc8LGJgIYPCIlEmj9mUQUoYL6UMopRSBpTJYJLnh8JgMFgkj+er39Hp55z/Ofd/u7/t/Pp+P+/v0+97BozzGRhnfW2AidiK9ViOBfiNt3iM27iO702B9gJswPkk2ivRl9iLu3VGTYATRaTHR1G+XziMM7lPHeAkjo1CvGp6AGerFzlgE271KR5ukckaPCw1qoApeIEZYwCE6zMsLRtfBexLTe2q/wlXcLDGYTNuxn0VEKWJEnU5H7AWr4qML2BP5nSpvKsCwmlWB/WwW4V3RQaL8KCmrPFGVuQZfMWkDHC6eFS7itJNT/cfsRpvkvh9zKwJ6jMGc8CXYo6nVozPYT+GUpTxgkM8Io+7EJ/TkHFoTcsBT7G44vA+1fl1Eox1EHcLca+HeEg8wZIccBXbs4hCMOY6dk+c2EVR86bIS/fL2JkDdhTRjdSkHJCVmNBRPCS24VoOmFxkEGWaVwOJpgZgbocpe15s2GX4lgPiexh3Oog0mcSqWJcy/WtTt+yO4FSfkJi6mL5/p2ldHy3gsVXbfkil0E8cyjdpUwalU6yNi5jdkk38cHan0f3PtC3CeNlbsDE1bn76ZcbbeJT6dQM/moJoA/TZivYejFm4FPgDhI9UGTqfGmgAAAAASUVORK5CYII="/> Account safety</h4> <p>We’ve enabled two-factor authentication and biometric identification to make sure no-one else can access your AQRU account.</p></li>
+                </ul>
+
+            </div>
+            <div class="sec10img">
+                <img src="https://aqru.io/app/uploads/2022/06/screenshot-security-1.png" width="300px" alt="">
+
+            </div>
+        </div>
+        <div class="sec11">
+            <img src="https://aqru.io/app/uploads/2022/03/firebase.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/law-beam.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/coinmarketcap-1.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/wintermute.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/moonpay.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/github.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/fireblocks-1.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/elyptic.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/complyvantage.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/aws-1.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/azure.png" alt="">
+            <img src="https://aqru.io/app/uploads/2022/03/aws-cognito.png" alt="">
+
+        </div>
+        <div class="sec12">
+            <div class="sec12items">
+                <h1>AQRU</h1>
+                <ul>
+                    <li><a href="">Invest</a></li>
+                    <li><a href="">Earn</a></li>
+                    <li><a href="">Exchange</a></li>
+                </ul>
+
+            </div>
+            <div class="sec12items">
+                <h1>Help & Support</h1>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Help Center</a></li>
+                    <li><a href="">FAQs</a></li>
+                </ul>
+
+            </div>
+            <div class="sec12items">
+                <h1>About Us</h1>
+                <ul>
+                    <li><a href="">In the Media</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="">Real-World Receivables</a></li>
+                </ul>
+
+            </div>
+            <div class="sec12items">
+                <h1>Terms Of Use</h1>
+                <ul>
+                    <li><a href="">Terms of Use</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookie Policy</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="sec13">
+            <p>Certain cryptoassets are classified as Restricted Mass Market Investments in the United Kingdom, meaning that they are high-risk investments and are not suitable for most retail investors. This website is for investment professionals only and not intended for a UK retail audience. If you are accessing this website from the UK and are not an investment professional, please exit this site immediately.
+
+                Accru Finance Ltd. (Bulgaria) is a company registered in Bulgaria with registration number 206651201 whose registered address is 9 Tsarigradsko Shose, 1124, Sofia, Bulgaria. Accru Finance Ltd. (Bulgaria) is a subsidiary of Accru Finance Ltd. (UK), a private limited company registered in England and Wales with registration number 13133682. FMSB: M22583575
+                
+                Capital at risk. You must be satisfied that this crypto offering is suitable for you in light of your financial circumstances and attitude towards risk. The price or value of cryptocurrencies can rapidly increase or decrease at any time. By using our services you accept at your sole risk changes to underlying asset prices (including changes in the price of stablecoins). The risk of loss in holding cryptocurrencies can be substantial. Funds received by us in relation to cryptocurrency transactions are not safeguarded (under the UK Electronic Money Regulations 2011) or covered by the Financial Services Compensation Scheme.References to AQRU herein mean to Accru Finance Ltd.
+                
+                The purpose of this website is solely to display information regarding the products and services available on the AQRU App. It is not intended to offer access to any of such products and services. Please note that the availability of the products and services on the AQRU App is subject to jurisdictional limitations. AQRU may not offer certain products, features and/or services on the AQRU App in certain jurisdictions due to regulatory restrictions.</p>
+        </div>
+        <div class="sec14">
+
+        </div>
+
+        
+    </section>
+
+</body>
+</html>
