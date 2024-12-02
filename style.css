@@ -308,6 +308,9 @@ margin-left: 10px;
     margin-right: 600px;
     width: 320px;
 }
+.hrr{
+    width: 320px;
+}
 .sec4 img{
     position: relative;
     right: 75px;
@@ -328,19 +331,25 @@ margin-left: 10px;
     top: -60px;
     margin-left: -40px;
     margin-right: px;
+   
 }
 .sec4dis{
     display: block;
     margin-left: -160px;
+    width: 330px;
+   
+    
 }
 
 .sec4ite2{
     margin-left: -0px;
     margin-top: 25px;
+    
 }
 .sec4ite1 img{
     margin-left: -15px;
     margin-top: 30px;
+   
 }
 .sec4ite1 a button{
     padding: 13px;
@@ -352,16 +361,20 @@ margin-left: 10px;
 }
 .sec4ite1 h2{
     width: 360px;
+    
 }
 .sec4ite1 p{
     width: 360px;
     font-size: 19px;
+  
 }
 .sec6{
     display: block;
+    width: 400px;
     gap: 1.6rem;
     margin-left: 55px;
     margin-top: 30px;
+    
 }
 .sec6ite{
     background-color: rgba(226, 222, 222, 0.699);
@@ -371,6 +384,7 @@ margin-left: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-top: 15px;
+    
 }
 .sec6ite img{
     clip-path: circle();
@@ -378,9 +392,11 @@ margin-left: 10px;
 }
 .sec6ite h1{
     font-size: 30px;
+    
 }
 .sec6ite p{
     font-size: 20px;
+    
 }
 .sec7 h1{
     font-size: 32px;
@@ -407,6 +423,7 @@ margin-left: 10px;
 .sec10write ul{
 width: 320px;
 font-size: 21px;
+
 }
 .sec10img{
     margin-left: 10px;
@@ -425,7 +442,6 @@ font-size: 21px;
 .sec12{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 }
 @media (max-width:700px){
