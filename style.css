@@ -415,9 +415,11 @@ font-size: 21px;
 .sec11{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 .sec11 img{
     width: 110px;
+}
+.preswc6{
+    width: 300px;
 }
 }
