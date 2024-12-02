@@ -428,3 +428,10 @@ font-size: 21px;
     
 }
 }
+@media (max-width:700px){
+    .sec12{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}
