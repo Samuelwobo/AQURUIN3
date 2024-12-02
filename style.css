@@ -422,4 +422,9 @@ font-size: 21px;
 .preswc6{
     width: 300px;
 }
+.sec12{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
 }
